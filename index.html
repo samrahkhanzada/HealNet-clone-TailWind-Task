@@ -5,13 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <title>HealNet Clone</title>
+  <style> 
+    html {
+  scroll-behavior: smooth;
+    }
+  </style>
 </head>
 
 <body class="bg-[#F6FBFF]  ">
 
   <!--  ====================NAVBAR ==================== -->
   
-  <nav class="w-full border-gray-200">
+  <nav class="w-full border-gray-200 fixed z-10 bg-white shadow-lg">
     <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
 
       <!-- Logo -->
@@ -22,10 +27,12 @@
         <li><a href="#" class="text-[#0f72b0] hover:text-[#0c9be1] transition-colors duration-300 cursor-pointer">
             Home
         </a></li> 
-        <li><a href="#" class="hover:text-[#0c9be1] transition duration-300 cursor-pointer"> Services</a></li> 
-        <li><a href="#" class="hover:text-[#0c9be1] transition duration-300 cursor-pointer"> Find Doctors </a></li> 
-        <li><a href="#" class="hover:text-[#0c9be1] transition duration-300 cursor-pointer">About us</a></li> 
-        <li><a href="#" class="hover:text-[#0c9be1] transition duration-300 cursor-pointer">Blog</a></li> <li><a href="#" class="hover:text-[#0c9be1] transition duration-300 cursor-pointer">Contact us</a></li> 
+        
+        <li><a href="#doctor" class="hover:text-[#0c9be1] transition duration-300 cursor-pointer"> Find Doctors </a></li> 
+        <li><a href="#services" class="hover:text-[#0c9be1] transition duration-300 cursor-pointer"> Services</a></li> 
+        <li><a href="#about" class="hover:text-[#0c9be1] transition duration-300 cursor-pointer">About us</a></li> 
+        <li><a href="#blog" class="hover:text-[#0c9be1] transition duration-300 cursor-pointer">Blog</a></li> 
+        <li><a href="#contact" class="hover:text-[#0c9be1] transition duration-300 cursor-pointer">Contact us</a></li> 
       </ul>
 
       <!-- Desktop Button -->
@@ -46,9 +53,11 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-3">
       <a href="#" class="block text-[#0084d4] font-medium hover:text-[#0c9be1] transition duration-300 cursor-pointer">Home</a>
-      <a href="#" class="block text-gray-700 font-medium hover:text-[#0c9be1] transition duration-300 cursor-pointer">About</a>
-      <a href="#" class="block text-gray-700 font-medium hover:text-[#0c9be1] transition duration-300 cursor-pointer">Services</a>
-      <a href="#" class="block text-gray-700 font-medium hover:text-[#0c9be1] transition duration-300 cursor-pointer">Contact</a>
+      <a href="#services" class="block text-gray-700 font-medium hover:text-[#0c9be1] transition duration-300 cursor-pointer">Services</a>
+      <a href="#doctor" class="block text-gray-700 font-medium hover:text-[#0c9be1] transition duration-300 cursor-pointer">Find Doctors</a>
+      <a href="#about" class="block text-gray-700 font-medium hover:text-[#0c9be1] transition duration-300 cursor-pointer">About Us</a>
+      <a href="#blog" class="block text-gray-700 font-medium hover:text-[#0c9be1] transition duration-300 cursor-pointer">Blog</a>
+      <a href="#contact" class="block text-gray-700 font-medium hover:text-[#0c9be1] transition duration-300 cursor-pointer">Contact</a>
 
       <!-- Join Us -->
       <button class=" text-white px-15 py-2 rounded-full font-medium 
@@ -64,7 +73,7 @@
     
     <!-- LEFT CONTENT -->
     <div>
-      <h1 class="text-4xl font-bold leading-tight text-gray-900 transition duration-300">
+      <h1 class="text-4xl font-bold leading-tight text-gray-900 transition duration-300  mt-10">
         Your <span class="text-[#0d9be1]">trusted partner</span><br />
         in digital healthcare.
       </h1>
@@ -125,7 +134,7 @@
   </section>
 <!-- =======================Appointment Section 2============================== -->
 
-<section class="text-gray-600 body-font mb-10 px-8 ">
+<section id='doctor' class="text-gray-600 body-font mb-10 px-8 ">
   <div class="container px-2 py-10 mx-1 border-[#80d0f8] rounded-lg border-1 shadow-lg">
     <div class="flex flex-col  w-full mb-8">
       <h1 class="sm:text-3xl text-2xl font-medium title-font text-center mb-4 text-[#189ee3]">Easily book an appointment in 3 simple steps.</h1>
@@ -150,7 +159,7 @@
   </div>
 </section>
 <!-- =================SECTION 3================= -->
- <section class="text-gray-600 body-font">
+ <section id='services' class="text-gray-600 body-font">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col text-center w-full mb-15">
         <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-6">Top <span class="text-[#0084d4]">services</span> we offer</h1>
@@ -222,7 +231,7 @@
   </div>
 </section>
 <!-- ===================== SECTION 4 ========================== -->
- <section class="text-gray-600 body-font overflow-hidden py-2 px-12">
+ <section id='about' class="text-gray-600 body-font overflow-hidden py-2 px-12">
   <div class="container px-5 py-6 mx-auto border-[#80d0f8] rounded-lg border-1 shadow-lg">
     <h1 class="text-gray-900 text-3xl title-font font-medium mb-1 text-center mb-20"><span class="text-[#0084d4]">HealNet’s Story:</span> Get to know us</h1>
     <div class="lg:w-4/5 mx-auto flex flex-wrap">
@@ -245,7 +254,7 @@
 </section>
 <!-- ===================== SECTION 5 ========================== -->
 
- <section class="text-gray-600 body-font  ">
+ <section class="text-gray-600 body-font ' ">
      <h1 class=" pt-24 justify-center sm:text-3xl text-2xl font-medium title-font text-center mb-4 ">Reach our <span class="text-[#189ee3]"> Help Desk</span> for support</h1>
      <p class="title-font text-center mb-4 justify-center ">Navigating your healthcare journey with HealNet is seamless. <br>Just follow these steps  You can also see our FAQ section for more guidance:</p>
   <div class="container px-5 pt-1 py-8 mx-auto flex flex-wrap ">
@@ -300,9 +309,164 @@
   </div>
 </section>
 
+<!-- =======================SECTION 6=============================== -->
+<section id="blog" class="py-20 px-4 max-w-6xl mx-auto">
+
+  <!-- Heading -->
+  <div class="text-center">
+    <h2 class="text-3xl font-semibold">
+      <span class="text-[#189ee3] font-bold">Patient Testimonials:</span><br/>
+      Hear from Those We’ve Cared For
+    </h2>
+
+    <p class="mt-4 text-gray-500 max-w-2xl mx-auto">
+      Discover the difference we make through the voices of those we’ve served:
+    </p>
+  </div>
+
+  <!-- Top Testimonial Cards -->
+  <div class="grid md:grid-cols-2 gap-8 mt-12">
+
+    <!-- Card 1 -->
+    <div class="bg-white border border-blue-300 rounded-2xl shadow p-6 flex items-start gap-4                hover:scale-105 hover:shadow-lg transition duration-300 cursor-pointer hover:bg-[#74d3ff]">
+      <img src="./images/testimonial-1.png"
+           class="w-20 h-20 rounded-lg object-cover">
+      <p class="text-gray-700 text-sm">
+        "After my knee surgery, the convenience of online consultations made my recovery
+        smoother than I could have imagined." <br>
+        <span class="font-semibold">- Linda A.</span>
+      </p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-white border border-blue-300 rounded-2xl shadow p-6 flex items-start gap-4                hover:scale-105 hover:shadow-lg transition duration-300 cursor-pointer hover:bg-[#74d3ff]" >
+      <img src="./images/testimonial-2.png"
+           class="w-20 h-20 rounded-lg object-cover">
+      <p class="text-gray-700 text-sm">
+        "Managing chronic conditions like diabetes requires vigilance, but the medicine
+        refill system has simplified my life." <br>
+        <span class="font-semibold">- Henry B.</span>
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Stats Row -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center mt-16">
+    <div>
+      <h3 class="text-3xl font-bold text-[#189ee3]">10,000+</h3>
+      <p class="text-gray-600 text-sm">Successful Consultations</p>
+    </div>
+
+    <div>
+      <h3 class="text-3xl font-bold text-[#189ee3]">2,500+</h3>
+      <p class="text-gray-600 text-sm">Healthcare Professionals</p>
+    </div>
+
+    <div>
+      <h3 class="text-3xl font-bold text-[#189ee3]">98%</h3>
+      <p class="text-gray-600 text-sm">Patient Satisfaction Rate</p>
+    </div>
+
+    <div>
+      <h3 class="text-3xl font-bold text-[#189ee3]">200+</h3>
+      <p class="text-gray-600 text-sm">Top Specialists</p>
+    </div>
+  </div>
+
+  <!-- Bottom Testimonial Cards -->
+  <div class="grid md:grid-cols-2 gap-8 mt-12 relative">
+
+    <!-- Card 3 -->
+    <div class="bg-white border border-blue-300 rounded-2xl shadow p-6 flex items-start gap-4                hover:scale-105 hover:shadow-lg transition duration-300 cursor-pointer hover:bg-[#74d3ff]">
+      <img src="./images/testimonial-3.png"
+           class="w-20 h-20 rounded-lg object-cover">
+      <p class="text-gray-700 text-sm">
+        "The prescription refill system is a game-changer for managing my diabetes.
+        It's efficient and hassle-free." <br>
+        <span class="font-semibold">- Joshua T.</span>
+      </p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="bg-white border border-blue-300 rounded-2xl shadow p-6 flex items-start gap-4                hover:scale-105 hover:shadow-lg transition duration-300 cursor-pointer hover:bg-[#74d3ff]">
+      <img src="./images/testimonial-4.png"
+           class="w-20 h-20 rounded-lg object-cover">
+      <p class="text-gray-700 text-sm">
+        "Finding a doctor who understands all my health needs has never been easier.
+        This platform has changed my life." <br>
+        <span class="font-semibold">- Samantha K.</span>
+      </p>
+    </div>
+
+    <!-- Decorative Dot Right -->
+    <div class="absolute right-0 bottom-0 opacity-40 hidden md:block">
+      <div class="grid grid-cols-6 gap-2">
+        <div class="w-3 h-3 bg-blue-300 rounded-full"></div>
+        <!-- Repeat as needed -->
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =======================SECTION 7=============================== -->
+<section class="py-16 px-4 max-w-5xl mx-auto text-center">
+  
+  <!-- Heading -->
+  <h2 class="text-3xl font-semibold">
+    <span class="text-[#0084d4] font-bold">Masters of Medicine:</span>
+    <br/>Meet our team of specialists
+  </h2>
+
+  <p class="mt-4 text-gray-500 max-w-2xl mx-auto mb-10">
+    Our team of specialists is at the forefront of medical innovation. Each specialist brings a 
+    unique blend of expertise, empathy, and experience to ensure that your health is in the best hands.
+  </p>
+
+  <!-- Doctor 1 -->
+  <div class="mt-2 hover:scale-105 hover:shadow-md transition duration-300 cursor-pointer bg-gradient-to-r from-[#75d4ff] to-[#0c9be1] text-white rounded-2xl flex flex-col md:flex-row items-center p-2 gap-6 shadow-lg w-full md:w-4/5 lg:w-3/4 mx-auto">
+    <img src="./images/sec-6-img1.png"
+         alt="Doctor Sarah"
+         class="w-70 rounded-xl object-cover" />
+
+    <div class="text-left pr-10">
+      <h3 class="text-xl font-bold">Dr. Sarah Johnson (Cardiologist)</h3>
+      <p class="mt-2 text-sm opacity-90">
+        Heart health is Dr. Johnson’s passion, and her approach to cardiology integrates cutting-edge 
+        technology with compassionate care. She’s a respected voice in the prevention of heart disease 
+        and a trusted partner to her patients on their journey to wellness.
+      </p>
+
+      <button class="mt-4 bg-white text-[#00a4f4] px-5 py-2 rounded-lg font-semibold shadow hover:scale-105 hover:shadow-md transition duration-300 cursor-pointer">
+        Book appointment <img src="./images/sec2-vec2.png " class="w-4 h-4 inline-block " alt="">
+      </button>
+    </div>
+  </div>
+
+  <!-- Doctor 2 -->
+  <div class="mt-20 hover:scale-105 hover:shadow-md transition duration-300 cursor-pointer bg-gradient-to-r from-[#75d4ff] to-[#0c9be1] text-white rounded-2xl flex flex-col md:flex-row items-center p-2 gap-6 shadow-lg w-full md:w-4/5 lg:w-3/4 mx-auto">
+    <img src="./images/sec-6-img2.png"
+         alt="Doctor Sarah"
+         class="w-70 rounded-xl object-cover" />
+
+    <div class="text-left pr-10">
+      <h3 class="text-xl font-bold">Dr. Mark Lee (Dermatologist )</h3>
+      <p class="mt-2 text-sm opacity-90">
+       Dr. Lee is a visionary in dermatology, advancing treatments for skin health with a gentle, holistic approach. His dedication to clinical excellence and patient education has made him a leader in dermatological care. He’s known for his precision and commitment to patient-centered care.
+      </p>
+
+      <button class="mt-4 bg-white text-[#00a4f4] px-5 py-2 rounded-lg font-semibold shadow hover:scale-105 hover:shadow-md transition duration-300 cursor-pointer">
+        Book appointment <img src="./images/sec2-vec2.png " class="w-4 h-4 inline-block " alt="">
+      </button>
+    </div>
+  </div>
+
+</section>
 <!-- =======================Contact Section  ============================== -->
 
-<section class="text-gray-600 body-font mb-20 mt-30 px-8 ">
+<section id='contact' class="text-gray-600 body-font mb-20 mt-10 px-8 ">
   <div class="container px-2 py-10 mx-1 ">
     <div class="flex flex-col  w-full mb-8">
       <h1 class="sm:text-3xl text-2xl font-medium title-font text-center mb-4 ">Reach our <span class="text-[#189ee3]"> Help Desk</span> for support</h1>
@@ -397,35 +561,26 @@
       </div>
     </div>
   </div>
+  <hr class="text-[#75d4ff] mx-10 ">
   <div class="bg-gray-100">
     <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row justify-center items-center">
-      <p class="text-gray-500 text-sm text-center">© 2020 Tailblocks —
-        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@knyttneve</a>
-      </p>
-      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center">
+      
+      <span class="inline-flex  mt-2 justify-center">
         <a class="text-gray-500">
-          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-          </svg>
+          <img src="./images/fb.png" class="w-7 h-7 rounded transition duration-300 hover:scale-110 cursor-pointer" alt="">
         </a>
         <a class="ml-3 text-gray-500">
-          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-          </svg>
+          <img src="./images/insta.png" class="w-7 h-7 rounded transition duration-300 hover:scale-110 cursor-pointer" alt="">
         </a>
         <a class="ml-3 text-gray-500">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-          </svg>
+          <img src="./images/linkedin.png" class="w-7 h-7 rounded transition duration-300 hover:scale-110 cursor-pointer" alt="">
         </a>
         <a class="ml-3 text-gray-500">
-          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-            <circle cx="4" cy="4" r="2" stroke="none"></circle>
-          </svg>
+          <img src="./images/yt.png" class="w-7 h-7 rounded transition duration-300 hover:scale-110 cursor-pointer" alt="">
         </a>
       </span>
+      <p class="text-gray-500 text-sm text-center sm:ml-auto sm:mt-0 hover:text-[#0c9be1] transition duration-300 cursor-pointer">HealNet 2024 © All Rights Reserved
+        </p>
     </div>
   </div>
 </footer>
